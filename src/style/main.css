@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+* #root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 45px;
+}/*# sourceMappingURL=main.css.map */
