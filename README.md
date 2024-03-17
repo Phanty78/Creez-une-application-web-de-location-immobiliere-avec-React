@@ -1,3 +1,11 @@
+Projet issu du cursus de développeur Web de Open Classroom.
+P6 - Créez une application web de location immobilière avec React
+
+Afin de lancer le projet via le terminal de commande, utilisez la commande npm run dev.
+
+
+--------------------------------------------------------------------------------------------------------------------
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
