@@ -1,0 +1,27 @@
+.engagements-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+.engagements-container .collapse-box {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  background: #FF6060;
+  width: 1023px;
+  height: 50px;
+  padding: 10px 20px 10px 20px;
+  color: white;
+}
+.engagements-container .collapse-box .hidden {
+  display: none;
+}
+.engagements-container .collapse-box .collapse-arrow-to-the-bottom {
+  transform: rotate(0.5turn);
+  transition: transform 1s;
+}
+.engagements-container .collapse-box .collapse-arrow-to-the-top {
+  transform: rotate(-0.5turn);
+  transition: transform 1s;
+}/*# sourceMappingURL=collapse.css.map */

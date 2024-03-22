@@ -1,0 +1,9 @@
+.a-propos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 43px;
+  overflow: hidden;
+  padding: 0 70px 0 70px;
+}/*# sourceMappingURL=a-propos.css.map */

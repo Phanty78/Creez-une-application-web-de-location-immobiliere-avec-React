@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./header.css"
 
 function Header() {
     return (
         <header className="header">
-            <img src="/logo_kaza.png" alt="Logo de Kaza" />
+            <img src="./logo_kaza.png" alt="Logo de Kaza" />
             <nav>
-                <Link to="/" className="nav-link">Accueil</Link>
-                <Link to="/a-propos" className="nav-link">A-propos</Link>
+                <NavLink to="/" className="nav-link">Accueil</NavLink>
+                <NavLink to="/a-propos" className="nav-link">A-propos</NavLink>
             </nav>
         </header>
     )
