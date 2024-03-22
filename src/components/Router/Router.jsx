@@ -4,7 +4,7 @@ import Apropos from '../../pages/a-propos/'
 import FicheLogement from '../../pages/fiche-logement/'
 import Header from '../Header/Header.jsx'
 import Footer from '../Footer/Footer.jsx'
-import Error from '../Error/Error.jsx'
+import Error from '../../pages/error404/index.jsx'
 
 function RouterComponent (){
     return (

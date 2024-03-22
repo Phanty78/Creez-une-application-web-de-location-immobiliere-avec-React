@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 30px;
   justify-content: center;
+  max-width: 1023px;
 }
 .engagements-container .collapse-box {
   display: flex;
@@ -14,9 +15,6 @@
   padding: 10px 20px 10px 20px;
   color: white;
 }
-.engagements-container .collapse-box .hidden {
-  display: none;
-}
 .engagements-container .collapse-box .collapse-arrow-to-the-bottom {
   transform: rotate(0.5turn);
   transition: transform 1s;
@@ -24,4 +22,17 @@
 .engagements-container .collapse-box .collapse-arrow-to-the-top {
   transform: rotate(-0.5turn);
   transition: transform 1s;
+}
+.engagements-container .hidden {
+  display: none;
+}
+.engagements-container .text.container {
+  background-color: rgba(246, 246, 246, 0.4509803922);
+}
+.engagements-container .text.container p {
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px 7px 10px 7px;
 }/*# sourceMappingURL=collapse.css.map */

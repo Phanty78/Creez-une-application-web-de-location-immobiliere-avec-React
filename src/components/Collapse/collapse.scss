@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 30px;
     justify-content: center;
+    max-width: 1023px;
 
     .collapse-box{
         display: flex;
@@ -14,10 +15,6 @@
         padding: 10px 20px 10px 20px;
         color: white;
 
-        .hidden{
-            display: none;
-        }
-
         .collapse-arrow-to-the-bottom{
             transform: rotate(0.5turn);
             transition: transform 1s;
@@ -26,6 +23,22 @@
         .collapse-arrow-to-the-top{
             transform: rotate(-0.5turn);
             transition: transform 1s;
+        }
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .text.container{
+        background-color: #F6F6F673;
+
+        p{
+            color: black;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            padding: 10px 7px 10px 7px;
         }
     }
 

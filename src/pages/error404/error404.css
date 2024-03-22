@@ -1,0 +1,33 @@
+.error-404-container {
+  display: flex;
+  flex-direction: column;
+  gap: 139px;
+  padding-top: 89px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 139px;
+}
+.error-404-container .number-404 {
+  color: #FF6060;
+  font-size: 288px;
+  font-style: normal;
+  font-weight: 700;
+}
+.error-404-container .error-message {
+  color: #FF6060;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+}
+.error-404-container .error-nav-link {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration-line: underline;
+}
+.error-404-container .error-nav-link:visited {
+  color: black;
+}
+.error-404-container .error-nav-link:hover {
+  color: #FF6060;
+}/*# sourceMappingURL=error404.css.map */

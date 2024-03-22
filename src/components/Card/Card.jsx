@@ -1,7 +1,7 @@
-import './cards.css'
+import './card.css'
 import { NavLink } from 'react-router-dom'
 
-function Cards({title,cover,id}){
+function Card({title,cover,id}){
     return (
         <div className="card">
             <NavLink>
@@ -13,4 +13,4 @@ function Cards({title,cover,id}){
     )
 }
 
-export default Cards
+export default Card

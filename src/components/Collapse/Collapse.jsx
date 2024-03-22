@@ -13,7 +13,10 @@ function Collapse({title, text}){
         <div className='collapse-box'>
             <h2>{title}</h2>
             <img className={isClose ? 'collapse-arrow-to-the-bottom' : 'collapse-arrow-to-the-top'} onClick={setAnimating} src='./arrow.svg' alt='icone de flèche'/>
-            <p className='hidden'>{text}</p>
+        </div>
+        <div className= {isClose ? 'hidden' : 'text-container'}>
+            {/*Pourquoi je n'arrive pas à avoir le CSS sur p*/}
+            <p>{text}</p>
         </div>
     </div>
     )
