@@ -11,7 +11,7 @@ function Home() {
       <Banner bannerTitle='Chez vous, partout et ailleurs' backgroundImage="/sea_background.jpg" />
       <div className='cards-container'>
         {data.map((card) => 
-          <Card key={card.id} title={card.title} cover={card.cover}/>
+          <Card key={card.id} id={card.id} title={card.title} cover={card.cover}/>
         )}
       </div>
     </div>

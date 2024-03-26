@@ -13,7 +13,7 @@ function RouterComponent (){
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/a-propos' element={<Apropos />} />
-                <Route path='/fiche-logement' element={<FicheLogement />} />
+                <Route path='/fiche-logement/:id' element={<FicheLogement />} />
                 <Route path='*' element={<Error />} />
             </Routes>
             <Footer />

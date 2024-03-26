@@ -2,19 +2,22 @@ import { useState } from 'react'
 import './collapse.css'
 
 function Collapse({title, text}){
-    const [isClose, setIsClose] = useState(true)
+    const [isClosed, setIsClose] = useState(true)
+    const [isWrap, setIsWrap] = useState(false)
 
     function setAnimating() {
-        setIsClose(!isClose);
+        setIsClose(!isClosed);
     }
+
+
 
     return (
         <div className='engagements-container'>
         <div className='collapse-box'>
             <h2>{title}</h2>
-            <img className={isClose ? 'collapse-arrow-to-the-bottom' : 'collapse-arrow-to-the-top'} onClick={setAnimating} src='./arrow.svg' alt='icone de flèche'/>
+            <img className={'arrow'} onClick={setAnimating} src='./arrow.svg' alt='icone de flèche'/>
         </div>
-        <div className= {isClose ? 'hidden' : 'text-container'}>
+        <div className= {isClosed ? 'hidden' : 'text-container'}>
             {/*Pourquoi je n'arrive pas à avoir le CSS sur p*/}
             <p>{text}</p>
         </div>

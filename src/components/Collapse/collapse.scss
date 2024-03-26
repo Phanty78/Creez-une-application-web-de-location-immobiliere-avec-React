@@ -15,14 +15,9 @@
         padding: 10px 20px 10px 20px;
         color: white;
 
-        .collapse-arrow-to-the-bottom{
-            transform: rotate(0.5turn);
-            transition: transform 1s;
-        }
-
-        .collapse-arrow-to-the-top{
-            transform: rotate(-0.5turn);
-            transition: transform 1s;
+        .arrow{
+            cursor: pointer;
+            transform: rotate(180deg);
         }
     }
 
