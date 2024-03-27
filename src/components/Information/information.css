@@ -1,0 +1,51 @@
+.information-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  max-width: 1240px;
+  width: 100%;
+  padding-top: 20px;
+}
+.information-container .title-and-host {
+  display: flex;
+  justify-content: space-between;
+}
+.information-container .title-and-host .title-and-location .title {
+  color: #FF6060;
+  font-size: 36px;
+  font-weight: 500;
+}
+.information-container .title-and-host .title-and-location .location {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+.information-container .title-and-host .host-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 19px;
+}
+.information-container .title-and-host .host-container p {
+  color: #FF6060;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 93px;
+  word-wrap: break-word;
+}
+.information-container .title-and-host .host-container img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.information-container .tags-and-rating {
+  display: flex;
+  justify-content: space-between;
+}
+.information-container .description-and-equipments {
+  display: flex;
+  justify-content: space-between;
+  gap: 76px;
+}/*# sourceMappingURL=information.css.map */

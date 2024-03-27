@@ -1,7 +1,7 @@
 import './slider.css'
 import { useEffect, useState } from 'react'
 
-function Slider({pictures, title, setPictures}) {
+function Slider({pictures, title}) {
 
     const [actualPictureIndex, setActualPictureIndex] = useState(0);
 
@@ -23,8 +23,8 @@ function Slider({pictures, title, setPictures}) {
         <div className="slider-container">
             <img className='slider-picture' src={pictures[actualPictureIndex]} alt={title}/>
             <div className="arrow-container">
-                <img onClick={previousPicture} src="/vector-left.svg" alt="fléche vers la gauche"/>
-                <img onClick={nextPicture} src="/vector-right.svg" alt="fléche vers la droite"/>
+                { pictures.length > 1 ? <img onClick={previousPicture} src="/vector-left.svg" alt="fléche vers la gauche"/> : <div></div>}
+                { pictures.length > 1 ? <img onClick={nextPicture} src="/vector-right.svg" alt="fléche vers la droite"/> : <div></div>}
             </div>
             <p className='picture-number'>{actualPictureIndex + 1}/{pictures.length}</p>
         </div>

@@ -1,0 +1,8 @@
+.stars-container {
+  display: flex;
+  gap: 7px;
+}
+.stars-container img {
+  height: 24px;
+  width: 24px;
+}/*# sourceMappingURL=rating.css.map */

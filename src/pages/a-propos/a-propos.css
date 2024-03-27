@@ -6,4 +6,12 @@
   gap: 43px;
   overflow: hidden;
   padding: 0 70px 0 70px;
+}
+.a-propos .engagements-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  max-width: 100%;
+  width: 100%;
 }/*# sourceMappingURL=a-propos.css.map */

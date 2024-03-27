@@ -1,0 +1,64 @@
+.information-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1240px;;
+    width: 100%;
+    padding-top: 20px;
+
+    .title-and-host{
+        display: flex;
+        justify-content: space-between;
+
+        .title-and-location{
+
+            .title{
+                color: #FF6060;
+                font-size: 36px;
+                font-weight: 500;
+            }
+
+            .location{
+                color: #000;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+
+        
+
+        .host-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 19px;
+
+            p{
+                color: #FF6060;
+                text-align: right;
+                font-size: 18px;
+                font-weight: 500;
+                max-width: 93px; 
+                word-wrap: break-word;
+            }
+
+            img{
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .tags-and-rating{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .description-and-equipments{
+        display: flex;
+        justify-content: space-between;
+        gap: 76px;
+    }
+}
