@@ -13,16 +13,15 @@ function Collapse({title, text, customClass}){
 
 
     return (
-        <>
-        <div className='collapse-box'>
+        <div className='collapse-container'>
+            <div className='collapse-box'>
                 <h2>{title}</h2>
-                <img className={'arrow'} onClick={setAnimating} src={arrow} alt='icone de flèche'/>
+                <img className={`arrow ${isClosed ? 'rotate-arrow' : ''}`} onClick={setAnimating} src={arrow} alt='icone de flèche'/>
             </div>
-            <div className= {isClosed ? 'hidden' : 'text-container'}>
-                {/*Pourquoi je n'arrive pas à avoir le CSS sur p*/}
+            <div className={`text-container ${isClosed ? 'hidden' : ''}`} >
                 <p>{text}</p>
-            </div> 
-        </>
+            </div>
+        </div> 
     )
 }
 

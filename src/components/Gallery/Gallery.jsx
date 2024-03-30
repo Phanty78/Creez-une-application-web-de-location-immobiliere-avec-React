@@ -1,7 +1,7 @@
-import './slider.css'
+import './gallery.css'
 import { useEffect, useState } from 'react'
 
-function Slider({pictures, title}) {
+function Gallery({pictures, title}) {
 
     const [actualPictureIndex, setActualPictureIndex] = useState(0);
 
@@ -26,9 +26,9 @@ function Slider({pictures, title}) {
                 { pictures.length > 1 ? <img onClick={previousPicture} src="/vector-left.svg" alt="fléche vers la gauche"/> : <div></div>}
                 { pictures.length > 1 ? <img onClick={nextPicture} src="/vector-right.svg" alt="fléche vers la droite"/> : <div></div>}
             </div>
-            <p className='picture-number'>{actualPictureIndex + 1}/{pictures.length}</p>
+            { pictures.length > 1 ? <p className='picture-number'>{actualPictureIndex + 1}/{pictures.length}</p> : <div></div>}
         </div>
     )
 }
 
-export default Slider
+export default Gallery

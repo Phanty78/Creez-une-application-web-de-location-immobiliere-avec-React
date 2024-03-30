@@ -1,3 +1,5 @@
+@import '../style/variables.scss';
+
 *{
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
@@ -10,5 +12,15 @@
        justify-content: center;
        gap: 50px;
        padding-top: 45px;
+
+       @media (max-width: $medium) {
+        gap: 30px;
+        padding-top: 40px;
+        }
+
+        @media (max-width: $small) {
+            gap: 27px;
+            padding-top: 20px;
+        }  
     }
 }

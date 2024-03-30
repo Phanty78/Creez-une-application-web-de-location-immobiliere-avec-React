@@ -1,11 +1,17 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./header.css"
 import kazaLogo from '../../../public/logo_kaza.png'
 
 function Header() {
+
+    const accueilInCaps = 'ACCUEIL'
+    const aproposInCaps = 'A-PROPOS'
+
     return (
         <header className="header">
-            <img src={kazaLogo} alt="Logo de Kaza" />
+            <NavLink to="/">
+                <img src={kazaLogo} alt="Logo de Kaza" className="logo" />
+            </NavLink>
             <nav>
                 <NavLink to="/" className="nav-link">Accueil</NavLink>
                 <NavLink to="/a-propos" className="nav-link">A-propos</NavLink>

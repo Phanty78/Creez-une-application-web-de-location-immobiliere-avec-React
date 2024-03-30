@@ -4,6 +4,12 @@
   height: 223px;
   position: relative;
 }
+@media (max-width: 576px) {
+  .home-banner {
+    max-width: 335px;
+    max-height: 111px;
+  }
+}
 .home-banner img {
   position: absolute;
   top: 0;
@@ -33,4 +39,12 @@
   color: white;
   font-size: 48px;
   width: 100%;
+}
+@media (max-width: 576px) {
+  .home-banner h1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 16px;
+  }
 }/*# sourceMappingURL=banner.css.map */

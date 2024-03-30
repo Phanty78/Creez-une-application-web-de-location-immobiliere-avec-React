@@ -10,4 +10,16 @@
   justify-content: center;
   gap: 50px;
   padding-top: 45px;
+}
+@media (max-width: 768px) {
+  * #root {
+    gap: 30px;
+    padding-top: 40px;
+  }
+}
+@media (max-width: 576px) {
+  * #root {
+    gap: 27px;
+    padding-top: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */

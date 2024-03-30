@@ -5,7 +5,19 @@
   align-items: center;
   gap: 43px;
   overflow: hidden;
-  padding: 0 70px 0 70px;
+  padding: 0 auto;
+}
+@media (max-width: 768px) {
+  .home-page {
+    gap: 33px;
+    padding: 0 auto;
+  }
+}
+@media (max-width: 576px) {
+  .home-page {
+    gap: 27px;
+    padding: 0 auto;
+  }
 }
 .home-page .cards-container {
   display: grid;
@@ -15,4 +27,19 @@
   border-radius: 25px;
   background: #F6F6F6;
   padding: 56px 50px 43px 50px;
+}
+@media (max-width: 768px) {
+  .home-page .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    padding: 36px 30px 23px 30px;
+  }
+}
+@media (max-width: 576px) {
+  .home-page .cards-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 22px;
+    padding: 0;
+    background-color: white;
+  }
 }/*# sourceMappingURL=home.css.map */

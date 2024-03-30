@@ -1,4 +1,7 @@
- .collapse-box{
+.collapse-container{
+    position: relative;
+
+    .collapse-box{
         display: flex;
         justify-content: space-between;
         border-radius: 5px;
@@ -8,19 +11,35 @@
         height: 50px;
         padding: 10px 20px 10px 20px;
         color: white;
+        margin: 0 auto;
 
         .arrow{
             cursor: pointer;
             transform: rotate(180deg);
+            transform-origin: center ; // animation par rapport au centre de l'image
+            transition: transform 500ms ease ; //check doc
+
+            &.rotate-arrow{
+                transform: rotate(0deg);
+            }
         }
     }
 
-    .hidden{
-        display: none;
-    }
-
-    .text.container{
+    .text-container{
         background-color: #F6F6F673;
+        position: relative;
+        opacity: 1;
+        max-width: 100%;
+        width: 100%;
+        //overflow-hidden à essayer ici
+
+        &.hidden{
+            opacity: 0;
+
+            p{
+                transform: translateY(-20px);
+            }
+        }
 
         p{
             color: black;
@@ -28,6 +47,16 @@
             font-style: normal;
             font-weight: 400;
             padding: 10px 7px 10px 7px;
+            position: absolute;
+            transform: translateY(0);
+            transition: transform 1s ease ; //check doc
         }
     }
+
+}
+ 
+ 
+
+    
+
     

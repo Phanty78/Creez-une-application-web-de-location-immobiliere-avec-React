@@ -1,3 +1,5 @@
+@import '../../style/variables.scss';
+
 .a-propos{
     display: flex;
     flex-direction: column;
@@ -7,6 +9,11 @@
     overflow: hidden;
     padding: 0 70px 0 70px;
 
+    @media (max-width: $small) {
+        padding: 0 20px;
+        gap: 20px;
+    }  
+
     .engagements-container{
         display: flex;
         flex-direction: column;
@@ -15,4 +22,8 @@
         max-width: 100%;
         width: 100%;
     }
+
+    @media (max-width: $small) {
+        gap: 20px;
+    }  
 }

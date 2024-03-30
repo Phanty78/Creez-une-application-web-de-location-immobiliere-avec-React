@@ -1,3 +1,5 @@
+@import '../../style/variables.scss';
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -6,16 +8,43 @@
     width: 100%;
     height: 68px;
 
+    @media (max-width: $medium) {
+        padding: 0 35px 0 35px;
+    }
+
+    @media (max-width: $small) {
+        padding: 0 20px 0 20px;
+        
+    }
+
+    .logo{
+        cursor: pointer;
+
+        @media (max-width: $small) {
+            max-width: 145px;
+        }
+    }
+
     nav{
         display: flex;
         gap: 57px;
 
+        @media (max-width: $small) {
+            gap: 26px;
+        }
+
         .nav-link{
             color: black;
             font-size: 24px;
-            font-style: normal;
             font-weight: 500;
             text-decoration: none;
+            text-transform: lowercase;
+
+            @media (max-width: $small) {
+                font-size: 12px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
         }
 
         .nav-link:hover{

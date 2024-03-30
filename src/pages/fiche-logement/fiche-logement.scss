@@ -1,7 +1,13 @@
+@import '../../style/variables.scss';
+
 .fiche-logement-main-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 70px 0 70px;
+
+    @media (max-width: $small) {
+        padding: 0 20px;
+    }  
 }

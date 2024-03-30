@@ -1,4 +1,7 @@
-.collapse-box {
+.collapse-container {
+  position: relative;
+}
+.collapse-container .collapse-box {
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
@@ -8,23 +11,37 @@
   height: 50px;
   padding: 10px 20px 10px 20px;
   color: white;
+  margin: 0 auto;
 }
-.collapse-box .arrow {
+.collapse-container .collapse-box .arrow {
   cursor: pointer;
   transform: rotate(180deg);
+  transform-origin: center;
+  transition: transform 500ms ease;
 }
-
-.hidden {
-  display: none;
+.collapse-container .collapse-box .arrow.rotate-arrow {
+  transform: rotate(0deg);
 }
-
-.text.container {
+.collapse-container .text-container {
   background-color: rgba(246, 246, 246, 0.4509803922);
+  position: relative;
+  opacity: 1;
+  max-width: 100%;
+  width: 100%;
 }
-.text.container p {
+.collapse-container .text-container.hidden {
+  opacity: 0;
+}
+.collapse-container .text-container.hidden p {
+  transform: translateY(-20px);
+}
+.collapse-container .text-container p {
   color: black;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   padding: 10px 7px 10px 7px;
+  position: absolute;
+  transform: translateY(0);
+  transition: transform 1s ease;
 }/*# sourceMappingURL=collapse.css.map */
