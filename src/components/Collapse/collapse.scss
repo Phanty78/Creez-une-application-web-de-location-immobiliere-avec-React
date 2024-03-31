@@ -41,7 +41,7 @@
             opacity: 0;
             height: 0;
 
-            p{
+            p,ul{
                 transform: translateY(-20px);
             }
         }
@@ -60,11 +60,28 @@
                 font-size: 13px;
             }
         }
+
+        ul{
+            padding: 10px 7px 10px 7px;
+            list-style-type: none;
+            transform: translateY(0);
+            transition: transform 2s ease ; //check doc
+
+            li{
+                color: black;
+                font-size: 18px;
+                font-weight: 400;
+                transform: translateY(0);
+                transition: transform 2s ease ; //check doc
+
+                @media (max-width: $small) {
+                    font-size: 12px;
+                }
+            }
+        }
     }
 
 }
- 
- 
 
     
 
