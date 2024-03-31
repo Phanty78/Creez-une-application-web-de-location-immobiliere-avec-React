@@ -38,6 +38,7 @@
 }
 .collapse-container .text-container.hidden p, .collapse-container .text-container.hidden ul {
   transform: translateY(-20px);
+  transition: transform 0.5s ease;
 }
 .collapse-container .text-container p {
   color: black;
@@ -62,8 +63,6 @@
   color: black;
   font-size: 18px;
   font-weight: 400;
-  transform: translateY(0);
-  transition: transform 2s ease;
 }
 @media (max-width: 576px) {
   .collapse-container .text-container ul li {
