@@ -1,5 +1,6 @@
 .collapse-container {
   position: relative;
+  width: 100%;
 }
 .collapse-container .collapse-box {
   display: flex;
