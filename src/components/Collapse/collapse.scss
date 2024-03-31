@@ -1,3 +1,5 @@
+@import '../../style/variables.scss';
+
 .collapse-container{
     position: relative;
 
@@ -44,12 +46,15 @@
         p{
             color: black;
             font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
+            font-weight: 700;
             padding: 10px 7px 10px 7px;
             position: absolute;
             transform: translateY(0);
             transition: transform 1s ease ; //check doc
+
+            @media (max-width: $small) {
+                font-size: 13px;
+            }
         }
     }
 

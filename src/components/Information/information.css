@@ -40,6 +40,42 @@
   height: 64px;
   border-radius: 50%;
 }
+@media (max-width: 576px) {
+  .information-container .title-and-location .title {
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .information-container .title-and-location .location {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .information-container .rating-and-host {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .information-container .rating-and-host .host-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10.5px;
+  }
+  .information-container .rating-and-host .host-container p {
+    color: #FF6060;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 500;
+    max-width: 60px;
+    word-wrap: break-word;
+  }
+  .information-container .rating-and-host .host-container img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+}
 .information-container .tags-and-rating {
   display: flex;
   justify-content: space-between;
@@ -48,4 +84,11 @@
   display: flex;
   justify-content: space-between;
   gap: 76px;
+}
+@media (max-width: 576px) {
+  .information-container .description-and-equipments {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=information.css.map */

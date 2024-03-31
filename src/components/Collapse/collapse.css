@@ -38,10 +38,14 @@
 .collapse-container .text-container p {
   color: black;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   padding: 10px 7px 10px 7px;
   position: absolute;
   transform: translateY(0);
   transition: transform 1s ease;
+}
+@media (max-width: 576px) {
+  .collapse-container .text-container p {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=collapse.css.map */
