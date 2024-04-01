@@ -4,9 +4,6 @@ import kazaLogo from '../../../public/logo_kaza.png'
 
 function Header() {
 
-    const accueilInCaps = 'ACCUEIL'
-    const aproposInCaps = 'A-PROPOS'
-
     return (
         <header className="header">
             <NavLink to="/">

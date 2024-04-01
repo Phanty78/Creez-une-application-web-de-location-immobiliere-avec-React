@@ -2,7 +2,6 @@ import '../../style/main.css'
 import './home.css'
 import  data from '../../../data/data.json'
 import Card from '../../components/Card/Card'
-import { useEffect } from 'react'
 import Banner from '../../components/Banner/Banner'
 
 function Home() {

@@ -1,6 +1,7 @@
 import './rating.css'
 import greyStar from '../../../public/grey-star.svg'
 import orangeStar from '../../../public/orange-star.svg'
+import PropTypes from 'prop-types'
 
 function Rating({rating}){
     let starNumber = parseInt(rating)
@@ -20,6 +21,10 @@ function Rating({rating}){
             ))}
         </div>
     );
+}
+
+Rating.propTypes = {
+    rating : PropTypes.string.isRequired
 }
 
 export default Rating

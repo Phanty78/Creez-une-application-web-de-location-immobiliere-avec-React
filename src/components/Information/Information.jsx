@@ -3,6 +3,7 @@ import Collapse from '../Collapse/Collapse';
 import Tag from '../Tag/Tag';
 import Rating from '../Rating/Rating';
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 function Information({ title, description, rating, host, location, tags, equipments }) {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 576);
@@ -68,6 +69,16 @@ function Information({ title, description, rating, host, location, tags, equipme
         </div>
     </div>
   );
+}
+
+Information.propTypes = {
+    title : PropTypes.string.isRequired,
+    description : PropTypes.string.isRequired,
+    rating : PropTypes.string.isRequired,
+    host : PropTypes.object.isRequired,
+    location : PropTypes.string.isRequired,
+    tags : PropTypes.arrayOf(PropTypes.string).isRequired,
+    equipments : PropTypes.arrayOf(PropTypes.string).isRequired
 }
 
 export default Information;
