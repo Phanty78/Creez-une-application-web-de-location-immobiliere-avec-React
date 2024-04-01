@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import './collapse.css'
 import arrow from '../../../public/arrow.svg'
+import PropTypes from 'prop-types'
 
-function Collapse({title, text, customClass}){
+function Collapse({title, text}){
     const [isClosed, setIsClosed] = useState(true)
 
     function setAnimating() {
@@ -29,6 +30,14 @@ function Collapse({title, text, customClass}){
             </div>}
         </div> 
     )
+}
+
+Collapse.propTypes = {
+    title : PropTypes.string.isRequired,
+    text : PropTypes.oneOfType([
+        PropTypes.string.isRequired,
+        PropTypes.arrayOf(PropTypes.string).isRequired
+    ])
 }
 
 export default Collapse

@@ -6,6 +6,7 @@
     .collapse-box{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         border-radius: 5px;
         background: #FF6060;
         max-width: 1023px;
@@ -14,6 +15,15 @@
         padding: 10px 20px 10px 20px;
         color: white;
         margin: 0 auto;
+
+        h2{
+            font-size: 18px;
+            font-weight: 700;
+
+            @media (max-width: $small) {
+                font-size: 13px;
+            }
+        }
 
         .arrow{
             cursor: pointer;

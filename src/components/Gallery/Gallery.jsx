@@ -1,5 +1,6 @@
 import './gallery.css'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
+import PropTypes from 'prop-types';
 
 function Gallery({pictures, title}) {
 
@@ -29,6 +30,11 @@ function Gallery({pictures, title}) {
             { pictures.length > 1 ? <p className='picture-number'>{actualPictureIndex + 1}/{pictures.length}</p> : <div></div>}
         </div>
     )
+}
+
+Gallery.propTypes = {
+    pictures : PropTypes.array.isRequired,
+    title : PropTypes.string.isRequired
 }
 
 export default Gallery

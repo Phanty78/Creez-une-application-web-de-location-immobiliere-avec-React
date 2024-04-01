@@ -1,5 +1,6 @@
 import './card.css'
 import { NavLink } from 'react-router-dom'
+import PropTypes from 'prop-types';
 
 function Card({title,cover,id}){
     return (
@@ -11,6 +12,12 @@ function Card({title,cover,id}){
             </NavLink>
         </div>
     )
+}
+
+Card.propTypes = {
+    title : PropTypes.string.isRequired,
+    cover : PropTypes.string.isRequired,
+    id : PropTypes.string.isRequired
 }
 
 export default Card

@@ -1,4 +1,5 @@
 import './tag.css'
+import PropTypes from 'prop-types';
 
 function Tag({tags}){
     return (
@@ -10,6 +11,10 @@ function Tag({tags}){
         </div>     
            )
     
+}
+
+Tag.propTypes = {
+    tags : PropTypes.arrayOf(PropTypes.string).isRequired
 }
 
 export default Tag
