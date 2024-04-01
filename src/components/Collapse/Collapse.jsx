@@ -3,24 +3,30 @@ import './collapse.css'
 import arrow from '../../../public/arrow.svg'
 
 function Collapse({title, text, customClass}){
-    const [isClosed, setIsClose] = useState(true)
-    const [isWrap, setIsWrap] = useState(false)
+    const [isClosed, setIsClosed] = useState(true)
 
     function setAnimating() {
-        setIsClose(!isClosed);
+        setIsClosed(!isClosed);
     }
-
-
 
     return (
         <div className='collapse-container'>
             <div className='collapse-box'>
                 <h2>{title}</h2>
-                <img className={`arrow ${isClosed ? 'rotate-arrow' : ''}`} onClick={setAnimating} src={arrow} alt='icone de flèche'/>
+                <img className={`arrow ${isClosed ? 'rotate-arrow' : ''}`} onClick={setAnimating} src={arrow} alt='icone de flèche'  aria-expanded={!isClosed}/>
             </div>
+            { Array.isArray(text) ?
+                <div className={`text-container ${isClosed ? 'hidden' : ''}`}>
+                    <ul>
+                        {text.map((element,index) =>
+                            <li key={index}>{element}</li>
+                        )}
+                    </ul>
+                </div>
+            : 
             <div className={`text-container ${isClosed ? 'hidden' : ''}`} >
                 <p>{text}</p>
-            </div>
+            </div>}
         </div> 
     )
 }

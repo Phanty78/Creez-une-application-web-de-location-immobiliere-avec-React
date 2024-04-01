@@ -2,7 +2,18 @@
   display: flex;
   gap: 7px;
 }
+@media (max-width: 576px) {
+  .stars-container {
+    gap: 5px;
+  }
+}
 .stars-container img {
   height: 24px;
   width: 24px;
+}
+@media (max-width: 576px) {
+  .stars-container img {
+    height: 18px;
+    width: 18px;
+  }
 }/*# sourceMappingURL=rating.css.map */

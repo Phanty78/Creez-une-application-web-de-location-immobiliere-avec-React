@@ -1,5 +1,5 @@
 .collapse-container {
-  position: relative;
+  width: 100%;
 }
 .collapse-container .collapse-box {
   display: flex;
@@ -24,28 +24,48 @@
 }
 .collapse-container .text-container {
   background-color: rgba(246, 246, 246, 0.4509803922);
-  position: relative;
-  opacity: 1;
   max-width: 100%;
   width: 100%;
+  opacity: 1;
+  height: auto;
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1023px;
 }
 .collapse-container .text-container.hidden {
   opacity: 0;
+  height: 0;
 }
-.collapse-container .text-container.hidden p {
+.collapse-container .text-container.hidden p, .collapse-container .text-container.hidden ul {
   transform: translateY(-20px);
+  transition: transform 0.5s ease;
 }
 .collapse-container .text-container p {
   color: black;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
   padding: 10px 7px 10px 7px;
-  position: absolute;
   transform: translateY(0);
-  transition: transform 1s ease;
+  transition: transform 2s ease;
 }
 @media (max-width: 576px) {
   .collapse-container .text-container p {
     font-size: 13px;
+  }
+}
+.collapse-container .text-container ul {
+  padding: 10px 7px 10px 7px;
+  list-style-type: none;
+  transform: translateY(0);
+  transition: transform 2s ease;
+}
+.collapse-container .text-container ul li {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+@media (max-width: 576px) {
+  .collapse-container .text-container ul li {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=collapse.css.map */
