@@ -49,6 +49,7 @@
 
         .nav-link:hover{
             text-decoration: underline;
+            text-decoration-thickness: 1px; // controle l'épaisseur du soulignement de underline
         }
     }
 }

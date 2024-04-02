@@ -15,7 +15,6 @@ function RouterComponent (){
                 <Route path='/a-propos' element={<Apropos />} />
                 <Route path='/fiche-logement/:id' element={<FicheLogement />} />
                 <Route path='*' element={<Error />} />
-                {/*<Route path='/fiche-logement/*' element={<Error />} />*/}
             </Routes>
             <Footer />
         </Router>

@@ -16,7 +16,7 @@
     } 
 
     .number-404{
-        color: #FF6060;
+        color: $secondary;
         font-size: 288px;
         font-style: normal;
         font-weight: 700;
@@ -27,7 +27,7 @@
     }
 
     .error-message{
-        color: #FF6060;
+        color: $secondary;
         font-size: 36px;
         font-style: normal;
         font-weight: 500;
@@ -51,7 +51,7 @@
         }
 
         &:hover{
-            color: #FF6060;
+            color: $secondary;
         }
     }
 }

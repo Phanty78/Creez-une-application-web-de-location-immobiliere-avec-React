@@ -9,12 +9,13 @@
     overflow: hidden;
     padding: 0 auto;
 
-    @media (max-width: $medium) {
+
+    @media (max-width: $medium) and (max-width : $xlarge) {
         gap: 33px;
         padding: 0 auto;
     }
 
-    @media (max-width: $small) {
+    @media (max-width: $medium) {
         gap: 27px;
         padding: 0 auto;
     }  
@@ -28,13 +29,13 @@
         background: #F6F6F6;
         padding: 56px 50px 43px 50px;
 
-        @media (max-width: $medium) {
+        @media (min-width: $medium) and (max-width: $xlarge) {
             grid-template-columns: repeat(2, 1fr);
             grid-column-gap: 40px;
             padding: 36px 30px 23px 30px;
         }
 
-        @media (max-width: $small) {
+        @media (max-width: $medium) {
             grid-template-columns: repeat(1, 1fr);
             grid-column-gap: 22px;
             padding: 0;

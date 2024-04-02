@@ -7,13 +7,13 @@
   overflow: hidden;
   padding: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) and (max-width: 1248px) {
   .home-page {
     gap: 33px;
     padding: 0 auto;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .home-page {
     gap: 27px;
     padding: 0 auto;
@@ -28,14 +28,14 @@
   background: #F6F6F6;
   padding: 56px 50px 43px 50px;
 }
-@media (max-width: 768px) {
+@media (min-width: 767px) and (max-width: 1248px) {
   .home-page .cards-container {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 40px;
     padding: 36px 30px 23px 30px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .home-page .cards-container {
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 22px;

@@ -10,7 +10,7 @@ footer {
   padding: 0 66px 0 66px;
   color: white;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   footer {
     gap: 14px;
   }
