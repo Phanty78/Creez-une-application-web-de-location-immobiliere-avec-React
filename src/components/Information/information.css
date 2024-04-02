@@ -1,33 +1,82 @@
-.information-container {
+.informations-and-collapses-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 25px;
   max-width: 1240px;
   width: 100%;
   padding-top: 20px;
+  gap: 24px;
 }
-.information-container .title-and-host {
+.informations-and-collapses-container .informations-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.information-container .title-and-host .title-and-location .title {
+@media (max-width: 576px) {
+  .informations-and-collapses-container .informations-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+}
+.informations-and-collapses-container .informations-container .title-and-location-and-tags-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+.informations-and-collapses-container .informations-container .title-and-location-and-tags-container .title-and-location {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 576px) {
+  .informations-and-collapses-container .informations-container .title-and-location-and-tags-container .title-and-location {
+    gap: 5px;
+  }
+}
+.informations-and-collapses-container .informations-container .title-and-location-and-tags-container .title-and-location .title {
   color: #FF6060;
   font-size: 36px;
   font-weight: 500;
 }
-.information-container .title-and-host .title-and-location .location {
+@media (max-width: 576px) {
+  .informations-and-collapses-container .informations-container .title-and-location-and-tags-container .title-and-location .title {
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+.informations-and-collapses-container .informations-container .title-and-location-and-tags-container .title-and-location .location {
   color: #000;
   font-size: 18px;
   font-weight: 500;
 }
-.information-container .title-and-host .host-container {
+@media (max-width: 576px) {
+  .informations-and-collapses-container .informations-container .title-and-location-and-tags-container .title-and-location .location {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+.informations-and-collapses-container .informations-container .host-and-ratings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+@media (max-width: 576px) {
+  .informations-and-collapses-container .informations-container .host-and-ratings-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+.informations-and-collapses-container .informations-container .host-and-ratings-container .host-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 19px;
 }
-.information-container .title-and-host .host-container p {
+.informations-and-collapses-container .informations-container .host-and-ratings-container .host-container p {
   color: #FF6060;
   text-align: right;
   font-size: 18px;
@@ -35,58 +84,29 @@
   max-width: 93px;
   word-wrap: break-word;
 }
-.information-container .title-and-host .host-container img {
+@media (max-width: 576px) {
+  .informations-and-collapses-container .informations-container .host-and-ratings-container .host-container p {
+    font-size: 12px;
+  }
+}
+.informations-and-collapses-container .informations-container .host-and-ratings-container .host-container img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
 }
 @media (max-width: 576px) {
-  .information-container .title-and-location .title {
-    color: #FF6060;
-    font-size: 18px;
-    font-weight: 500;
-  }
-  .information-container .title-and-location .location {
-    color: #000;
-    font-size: 14px;
-    font-weight: 500;
-  }
-  .information-container .rating-and-host {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .information-container .rating-and-host .host-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10.5px;
-  }
-  .information-container .rating-and-host .host-container p {
-    color: #FF6060;
-    text-align: right;
-    font-size: 12px;
-    font-weight: 500;
-    max-width: 60px;
-    word-wrap: break-word;
-  }
-  .information-container .rating-and-host .host-container img {
+  .informations-and-collapses-container .informations-container .host-and-ratings-container .host-container img {
     width: 32px;
     height: 32px;
-    border-radius: 50%;
   }
 }
-.information-container .tags-and-rating {
-  display: flex;
-  justify-content: space-between;
-}
-.information-container .description-and-equipments {
+.informations-and-collapses-container .collapses-container {
   display: flex;
   justify-content: space-between;
   gap: 76px;
 }
 @media (max-width: 576px) {
-  .information-container .description-and-equipments {
+  .informations-and-collapses-container .collapses-container {
     flex-direction: column;
     gap: 20px;
     justify-content: center;
