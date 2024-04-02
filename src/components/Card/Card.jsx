@@ -1,15 +1,15 @@
 import './card.css'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types';
 
 function Card({title,cover,id}){
     return (
         <div className="card">
-            <NavLink to={`/fiche-logement/${id}`} className="error-nav-link">
+            <Link to={`/fiche-logement/${id}`} className="error-nav-link">
             <img src={cover} alt={title}/>
             <div className='card-overlay'></div>
             <h2>{title}</h2>
-            </NavLink>
+            </Link>
         </div>
     )
 }

@@ -11,7 +11,7 @@ function Header() {
             </NavLink>
             <nav>
                 <NavLink to="/" className="nav-link">Accueil</NavLink>
-                <NavLink to="/a-propos" className="nav-link">A-propos</NavLink>
+                <NavLink to="/a-propos" className="nav-link">A propos</NavLink>
             </nav>
         </header>
     )

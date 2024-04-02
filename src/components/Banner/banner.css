@@ -4,6 +4,16 @@
   height: 223px;
   position: relative;
 }
+@media (min-width: 992px) and (max-width: 1248px) {
+  .home-banner {
+    max-width: 884px;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .home-banner {
+    max-width: 628px;
+  }
+}
 @media (max-width: 576px) {
   .home-banner {
     max-width: 335px;

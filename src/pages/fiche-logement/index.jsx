@@ -9,11 +9,11 @@ import Error from '../../pages/error404/index.jsx'
 
 
 function FicheLogement() {
-    let [pictures, setPictures] = useState(undefined)
+    let [pictures, setPictures] = useState("")
     let [title, setTitle] = useState("")
     let [description, setDescription] = useState("")
     let [rating, setRating] = useState("")
-    let [host, setHost] = useState(undefined)
+    let [host, setHost] = useState("")
     let [location, setLocation] = useState("")
     let [tags, setTags] = useState([])
     let [equipments, setEquipments] = useState([])

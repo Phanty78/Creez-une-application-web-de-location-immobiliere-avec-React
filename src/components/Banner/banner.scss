@@ -6,6 +6,14 @@
     height: 223px;
     position: relative;
 
+    @media (min-width: $large) and (max-width: $xlarge)  {
+        max-width: 884px;
+    }
+
+    @media (min-width: $small) and (max-width: $large)  {
+        max-width: 628px;
+    }
+
     @media (max-width: $small) {
         max-width: 335px;
         max-height: 111px;
