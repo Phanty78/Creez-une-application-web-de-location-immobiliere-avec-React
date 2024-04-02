@@ -3,6 +3,8 @@ P6 - Créez une application web de location immobilière avec React
 
 Afin de lancer le projet via le terminal de commande, utilisez la commande npm run dev.
 
+Version de production : 
+https://creez-une-application-web-de-location-immobiliere-k49zqsljm.vercel.app/
 
 --------------------------------------------------------------------------------------------------------------------
 
