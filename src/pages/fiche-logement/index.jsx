@@ -17,7 +17,7 @@ function FicheLogement() {
     let [location, setLocation] = useState("")
     let [tags, setTags] = useState([])
     let [equipments, setEquipments] = useState([])
-    let { id } = useParams() //Récupération de l'id dans l'URL
+    let { id } = useParams()
     let [isIdValid, setIsIdValid] = useState(true)
 
     useEffect(() =>{
