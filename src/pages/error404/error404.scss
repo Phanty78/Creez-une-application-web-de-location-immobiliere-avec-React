@@ -3,38 +3,38 @@
 .error-404-container{
     display: flex;
     flex-direction: column;
-    gap: 139px;
-    padding-top: 89px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 139px;
+    gap: 113px;
+    padding-bottom: 113px;
+    padding-top: 113px;
 
-    @media (max-width: $small) {
-        gap: 113px;
-        padding-bottom: 113px;
-        padding-top: 113px;
+    @media (min-width: $medium) {
+        gap: 139px;
+        padding-bottom: 139px;
+        padding-top: 89px;
     } 
 
     .number-404{
         color: $secondary;
-        font-size: 288px;
+        font-size: 96px;
         font-style: normal;
         font-weight: 700;
 
-        @media (max-width: $small) {
-            font-size: 96px;
+        @media (min-width: $medium) {
+            font-size: 288px;
         }  
     }
 
     .error-message{
         color: $secondary;
-        font-size: 36px;
         font-style: normal;
         font-weight: 500;
+        font-size: 18px;
+        text-align: center;
 
-        @media (max-width: $small) {
-            font-size: 18px;
-            text-align: center;
+        @media (min-width: $medium) {
+            font-size: 36px;
         }  
         
     }

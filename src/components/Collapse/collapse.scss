@@ -17,19 +17,19 @@
         margin: 0 auto;
 
         h2{
-            font-size: 18px;
+            font-size: 13px;
             font-weight: 700;
 
-            @media (max-width: $small) {
-                font-size: 13px;
+            @media (min-width: $medium) {
+                font-size: 18px;
             }
         }
 
         .arrow{
             cursor: pointer;
             transform: rotate(180deg);
-            transform-origin: center ; // animation par rapport au centre de l'image
-            transition: transform 500ms ease ; //check doc
+            transform-origin: center ;
+            transition: transform 500ms ease ;
 
             &.rotate-arrow{
                 transform: rotate(0deg);
@@ -53,22 +53,22 @@
 
             p,ul{
                 transform: translateY(-20px);
-                transition: transform 0.5s ease ; //check doc
+                transition: transform 0.5s ease ;
             }
         }
 
         p{
             color: black;
-            font-size: 18px;
+            font-size: 13px;
             font-weight: 400;
             padding: 10px 7px 10px 7px;
             transform: translateY(0);
-            transition: transform 1s ease ; //check doc
+            transition: transform 0.5s ease ;
             
             
 
-            @media (max-width: $small) {
-                font-size: 13px;
+            @media (min-width: $medium) {
+                font-size: 18px;
             }
         }
 
@@ -76,15 +76,15 @@
             padding: 10px 7px 10px 7px;
             list-style-type: none;
             transform: translateY(0);
-            transition: transform 2s ease ; //check doc
+            transition: transform 2s ease ;
 
             li{
                 color: black;
-                font-size: 18px;
+                font-size: 12px;
                 font-weight: 400;
 
-                @media (max-width: $small) {
-                    font-size: 12px;
+                @media (min-width: $medium) {
+                    font-size: 18px;
                 }
             }
         }

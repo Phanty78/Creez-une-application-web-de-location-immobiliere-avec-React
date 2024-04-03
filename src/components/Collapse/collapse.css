@@ -15,12 +15,12 @@
   margin: 0 auto;
 }
 .collapse-container .collapse-box h2 {
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 700;
 }
-@media (max-width: 576px) {
+@media (min-width: 767px) {
   .collapse-container .collapse-box h2 {
-    font-size: 13px;
+    font-size: 18px;
   }
 }
 .collapse-container .collapse-box .arrow {
@@ -52,15 +52,15 @@
 }
 .collapse-container .text-container p {
   color: black;
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 400;
   padding: 10px 7px 10px 7px;
   transform: translateY(0);
-  transition: transform 1s ease;
+  transition: transform 0.5s ease;
 }
-@media (max-width: 576px) {
+@media (min-width: 767px) {
   .collapse-container .text-container p {
-    font-size: 13px;
+    font-size: 18px;
   }
 }
 .collapse-container .text-container ul {
@@ -71,11 +71,11 @@
 }
 .collapse-container .text-container ul li {
   color: black;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 400;
 }
-@media (max-width: 576px) {
+@media (min-width: 767px) {
   .collapse-container .text-container ul li {
-    font-size: 12px;
+    font-size: 18px;
   }
 }/*# sourceMappingURL=collapse.css.map */

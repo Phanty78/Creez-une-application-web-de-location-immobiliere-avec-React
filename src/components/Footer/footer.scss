@@ -6,25 +6,24 @@ footer{
     height: 209px;
     display: flex;
     flex-direction: column;
-    gap: 28px;
     justify-content: center;
     align-items: center;
     padding: 0 66px 0 66px;
     color: white;
+    text-align: center;
 
-    @media (max-width: $medium) {
-        gap: 14px;
+    @media (min-width: $medium) {
+        gap: 28px;
     }
 
-    @media (max-width: $small) {
-        gap: 0;
-        
-            p{
-                text-align: center;
-                max-width: 133px;
-            }
-        }
+    p{
+        max-width: 133px;
 
+        @media (min-width: $medium) {
+            max-width: 100%;
+        }
+    }
+    
         .link{
             font-weight: bold;
         }
