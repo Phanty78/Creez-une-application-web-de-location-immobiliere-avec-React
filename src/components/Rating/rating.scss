@@ -2,19 +2,19 @@
 
 .stars-container{
     display: flex;
-    gap: 7px;
+    gap: 5px;
 
-    @media (max-width: $small) {
-        gap: 5px;
+    @media (min-width: $medium) {
+        gap: 7px;
     }
 
     img{
-        height: 24px;
-        width: 24px;
+        height: 18px;
+        width: 18px;
 
-        @media (max-width: $small) {
-            height: 18px;
-            width: 18px;
+        @media (min-width: $medium) {
+            height: 24px;
+            width: 24px;
         }
     }
 }

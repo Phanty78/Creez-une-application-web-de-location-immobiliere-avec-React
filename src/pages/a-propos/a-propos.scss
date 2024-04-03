@@ -5,25 +5,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 43px;
     overflow: hidden;
-    padding: 0 70px 0 70px;
+    padding: 0 20px;
+    gap: 20px;
 
-    @media (max-width: $small) {
-        padding: 0 20px;
-        gap: 20px;
+    @media (min-width: $medium) {
+        padding: 0 70px;
+        gap: 43px;
     }  
 
     .engagements-container{
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
         justify-content: center;
         max-width: 100%;
         width: 100%;
     }
 
-    @media (max-width: $small) {
-        gap: 20px;
+    @media (min-width: $medium) {
+        gap: 30px;
     }  
 }
