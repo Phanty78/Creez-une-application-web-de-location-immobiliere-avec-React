@@ -9,9 +9,10 @@ function Apropos() {
         <div className="a-propos">
             <Banner backgroundImage="/mountain_background.jpg"/>
             <div className="engagements-container">
-            {engagements.map((engagement) =>
+            {engagements ? 
+                engagements.map((engagement) =>
                 <Collapse key={engagement.id} title={engagement.title} text={engagement.text} />
-            )}
+            ) : null }
             </div>
         </div>
     )

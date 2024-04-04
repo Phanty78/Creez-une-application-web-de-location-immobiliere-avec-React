@@ -10,8 +10,8 @@ function Header() {
                 <img src={kazaLogo} alt="Logo de Kaza" className="logo" />
             </NavLink>
             <nav>
-                <NavLink to="/" className="nav-link">Accueil</NavLink>
-                <NavLink to="/a-propos" className="nav-link">A propos</NavLink>
+                <NavLink to="/" className="nav-link">A<span className="lowercase-in-desktop">ccueil</span></NavLink>
+                <NavLink to="/a-propos" className="nav-link">A <span className="lowercase-in-desktop">propos</span></NavLink>
             </nav>
         </header>
     )

@@ -9,9 +9,10 @@ function Home() {
     <div className='home-page'>
       <Banner bannerTitle='Chez vous, partout et ailleurs' backgroundImage="/sea_background.jpg" />
       <div className='cards-container'>
-        {data.map((card) => 
+        {data ?
+        data.map((card) => 
           <Card key={card.id} id={card.id} title={card.title} cover={card.cover}/>
-        )}
+        ) : null}
       </div>
     </div>
   )
