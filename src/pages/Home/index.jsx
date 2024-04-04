@@ -9,12 +9,12 @@ function Home() {
     <div className='home-page'>
       <Banner bannerTitle='Chez vous, partout et ailleurs' backgroundImage="/sea_background.jpg" />
       <div className='cards-container'>
-        {data.map((card) => 
-          <Card key={card.id} id={card.id} title={card.title} cover={card.cover}/>
-        )}
+        {data && data.map((card, index) => {
+          return <Card key={card.id} id={card.id} title={card.title} cover={card.cover} lazy={index >= 6 ? 'lazy' : ''}/>
+        })}
       </div>
     </div>
-  )
+  );
 }
 
 export default Home

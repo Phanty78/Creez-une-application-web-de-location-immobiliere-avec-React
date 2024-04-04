@@ -21,13 +21,19 @@ function Gallery({pictures, title}) {
     }
 
     return (
+
         <div className="slider-container">
             <img className='slider-picture' src={pictures[actualPictureIndex]} alt={title}/>
-            <div className="arrow-container">
-                { pictures.length > 1 ? <img onClick={previousPicture} src="/vector-left.svg" alt="fléche vers la gauche"/> : <div></div>}
-                { pictures.length > 1 ? <img onClick={nextPicture} src="/vector-right.svg" alt="fléche vers la droite"/> : <div></div>}
-            </div>
-            { pictures.length > 1 ? <p className='picture-number'>{actualPictureIndex + 1}/{pictures.length}</p> : <div></div>}
+            { pictures.length > 1 &&
+             ( <>
+                    <div className="arrow-container">
+                        <img onClick={previousPicture} src="/vector-left.svg" alt="fléche vers la gauche"/>
+                        <img onClick={nextPicture} src="/vector-right.svg" alt="fléche vers la droite"/>
+                    </div>
+                    <p className='picture-number'>{actualPictureIndex + 1}/{pictures.length}</p>
+                </>
+             
+             )}
         </div>
     )
 }
