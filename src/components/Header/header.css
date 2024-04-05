@@ -56,7 +56,7 @@
     text-transform: lowercase;
   }
 }
-.header nav .underline-by-default {
+.header nav .underline-active {
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }/*# sourceMappingURL=header.css.map */
