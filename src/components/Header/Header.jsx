@@ -5,20 +5,31 @@ import { useState } from "react";
 
 function Header() {
 
-const [isFirstLoading, setIsFirstLoading] = useState(true)
+const [isHomeActive, setIsHomeActive] = useState(true)
+const [isAproposActive, setIsAproposActive] = useState(false)
 
-function toggleIsFirstLoading() {
-    setIsFirstLoading(false)
+function toggleIsHomeActive() {
+    if (!isHomeActive) {
+        setIsHomeActive(!isHomeActive)
+        setIsAproposActive(!isAproposActive) 
+    }
+}
+
+function toggleIsAproposActive() {
+    if (!isAproposActive) {
+        setIsAproposActive(!isAproposActive)
+        setIsHomeActive(!isHomeActive)
+    }  
 }
 
     return (
         <header className="header">
             <NavLink to="/">
-                <img src={kazaLogo} alt="Logo de Kaza" onClick={toggleIsFirstLoading} className="logo" />
-            </NavLink>
+                <img src={kazaLogo} alt="Logo de Kaza" onClick={toggleIsHomeActive} className="logo" />
+            </NavLink> 
             <nav>
-                <NavLink to="/" onClick={toggleIsFirstLoading} className={`nav-link ${isFirstLoading ? 'underline-by-default' : null}`}>A<span className="lowercase-in-desktop">ccueil</span></NavLink>
-                <NavLink to="/a-propos" onClick={toggleIsFirstLoading} className="nav-link">A <span className="lowercase-in-desktop">propos</span></NavLink>
+                <NavLink to="/" onClick={toggleIsHomeActive} className={`nav-link ${isHomeActive ? 'underline-active' : null}`}>A<span className="lowercase-in-desktop">ccueil</span></NavLink>
+                <NavLink to="/a-propos" onClick={toggleIsAproposActive} className={`nav-link ${isAproposActive ? 'underline-active' : null}`}>A <span className="lowercase-in-desktop">propos</span></NavLink>
             </nav>
         </header>
     )
