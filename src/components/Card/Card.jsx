@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types';
 
 function Card({title,cover,id,lazy}){
-    console.log(lazy)
     return (
         <div className="card">
             <Link to={`/fiche-logement/${id}`} className="error-nav-link">

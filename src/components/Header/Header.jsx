@@ -8,28 +8,21 @@ function Header() {
 const [isHomeActive, setIsHomeActive] = useState(true)
 const [isAproposActive, setIsAproposActive] = useState(false)
 
-function toggleIsHomeActive() {
-    if (!isHomeActive) {
+function toggleActive(isActive) {
+    if (!isActive) {
         setIsHomeActive(!isHomeActive)
         setIsAproposActive(!isAproposActive) 
     }
 }
 
-function toggleIsAproposActive() {
-    if (!isAproposActive) {
-        setIsAproposActive(!isAproposActive)
-        setIsHomeActive(!isHomeActive)
-    }  
-}
-
     return (
         <header className="header">
             <NavLink to="/">
-                <img src={kazaLogo} alt="Logo de Kaza" onClick={toggleIsHomeActive} className="logo" />
+                <img src={kazaLogo} alt="Logo de Kaza" onClick={() => toggleActive(isHomeActive)} className="logo" />
             </NavLink> 
             <nav>
-                <NavLink to="/" onClick={toggleIsHomeActive} className={`nav-link ${isHomeActive ? 'underline-active' : null}`}>A<span className="lowercase-in-desktop">ccueil</span></NavLink>
-                <NavLink to="/a-propos" onClick={toggleIsAproposActive} className={`nav-link ${isAproposActive ? 'underline-active' : null}`}>A <span className="lowercase-in-desktop">propos</span></NavLink>
+                <NavLink to="/" onClick={() => toggleActive(isHomeActive)} className={`nav-link ${isHomeActive ? 'underline-active' : null}`}>A<span className="lowercase-in-desktop">ccueil</span></NavLink>
+                <NavLink to="/a-propos" onClick={() => toggleActive(isAproposActive)} className={`nav-link ${isAproposActive ? 'underline-active' : null}`}>A <span className="lowercase-in-desktop">propos</span></NavLink>
             </nav>
         </header>
     )
