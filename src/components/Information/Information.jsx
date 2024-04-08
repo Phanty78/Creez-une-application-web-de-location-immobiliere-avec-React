@@ -15,9 +15,9 @@ function Information({ title, description, rating, host, location, tags, equipme
                     <p className='location'>{location}</p>
                 </div>
                 <div className='tags-container'>
-                {tags.map((tag, index) => {
-                    return <Tag key={index} tag={tag} />
-                })}
+                    {tags.map((tag, index) => {
+                        return <Tag key={index} tag={tag} />
+                    })}
                 </div>
             </div>
             <div className='host-and-ratings-container'>
