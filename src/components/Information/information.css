@@ -57,6 +57,11 @@
     font-size: 18px;
   }
 }
+.informations-and-collapses-container .informations-container .title-and-location-and-tags-container .tags-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 .informations-and-collapses-container .informations-container .host-and-ratings-container {
   display: flex;
   gap: 27px;
