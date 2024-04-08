@@ -1,9 +1,4 @@
-.tags-container {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.tags-container .tag-box {
+.tag-box {
   border-radius: 10px;
   background: #FF6060;
   color: white;
@@ -17,7 +12,7 @@
   padding: 0 30px;
 }
 @media (min-width: 767px) {
-  .tags-container .tag-box {
+  .tag-box {
     font-size: 14px;
   }
 }/*# sourceMappingURL=tag.css.map */

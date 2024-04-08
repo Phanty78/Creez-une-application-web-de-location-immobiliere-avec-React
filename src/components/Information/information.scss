@@ -58,6 +58,12 @@
                     }
                 }
             }
+
+            .tags-container{
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
         }
 
         .host-and-ratings-container{
