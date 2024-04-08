@@ -46,11 +46,16 @@
     }
 
     .picture-number{
+        visibility: hidden;
         text-align: center;
         position: absolute;
         top: 95%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
+
+        @media (min-width: $medium) {
+            visibility: visible;          
+        }
     }
 }
